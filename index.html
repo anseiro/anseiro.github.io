@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina de Juegos de GenExplora</title>
+  <style>
+    /* Paleta de colores */
+    :root {
+      --genetic-blue: #34A85A; /* Azul genético */
+      --dna-green: #8BC34A; /* Verde del ADN */
+      --helix-orange: #FFC107; /* Naranja de la hélice */
+      --background-gradient: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    }
+
+    /* Diseño general */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--background-gradient);
+      padding: 20px;
+      margin: 0;
+    }
+
+  #copi {
+    color: gray;
+    font-family: new times roman;
+    font-size: 15px;
+  }
+  
+    header {
+      background: var(--genetic-blue);
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    article {
+      background: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    article h2 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    /* Botones */
+   .button {
+      background: var(--dna-green);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+   .button:hover {
+      background: var(--helix-orange);
+    }
+
+   .button:active {
+      background: var(--genetic-blue);
+      transform: scale(0.9);
+    }
+
+    /* Animación de botones */
+   .button {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Degradado de fondo */
+   .gradient-background {
+      background: var(--background-gradient);
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+  #koki {
+    color: gray;
+  font-family:courier,helvética;
+    font-size: 20px;
+  }
+  
+  .fcc-btn {
+  background-color: #199319;
+  color: white;
+  font-family:courier,arial,helvética;
+}
+  
+  #sezz {
+  font-family: cursive, fantasy, new times roman;
+  }
+  
+    /* Gradientes de azul y verde */
+   .blue-gradient {
+      background: linear-gradient(to bottom, #34A85A, #56B3FA);
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 50vh;
+      left: 0;
+      z-index: -1;
+    }
+
+   .green-gradient {
+      background: linear-gradient(to bottom, #8BC34A, #34C759);
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 100vh;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-background"></div>
+  <div class="blue-gradient"></div>
+  <div class="green-gradient"></div>
+  <header>
+    <h1>Seccion de juegos interactivos para aprender todo sobre la genetica divirtiendote.</h1>
+  </header>
+  <article>
+    <h2>¿Por qué son importantes estos juegos?</h2>
+    <p id="importancia">Los juegos interactivos sobre genética son importantes porque:
+      <ul>
+        <li>Hacen que el aprendizaje sea divertido y efectivo</li>
+        <li>Desarrollan habilidades como pensamiento crítico y resolución de problemas</li>
+        <li>Despiertan la motivación e interés por la genética</li>
+        <li>Permiten aplicar los conocimientos a situaciones reales</li>
+      </ul>
+    </p>
+    <button aria-label="Toggle importance" id="toggle-importancia" class="button">¿Por qué son importantes?</button>
+  </article>
+
+  <!-- Game 1 -->
+  <article id="juego1">
+    <h2>Primer Juego: Ahorcado, sobre el ARN y sus funciones</h2>
+    <p>En este juego, podrás aprender sobre las funciones del ARN y cómo se relaciona con el ADN.</p>
+  <iframe style="max-width:100%" src="https://wordwall.net/es/embed/9f97c0d08cf044869e01f71ae8a424f2?themeId=44&templateId=73&fontStackId=12" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+  </article>
+
+  <!-- Game 2 -->
+  <article id="juego2">
+    <h2>Segundo Juego: ARN + ADN Quiz</h2>
+    <p>En este juego, podrás probar tus conocimientos sobre el ARN y el ADN con un divertido quiz.</p>
+      <iframe style="max-width:100%" src="https://wordwall.net/es/embed/bda5bdb56eed42e6852a47370d07b130?themeId=60&templateId=5&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+  </article>
+
+  <!-- Game 3 -->
+  <article id="juego3">
+    <h2>Tercer Juego: Rana Genética</h2>
+    <p>En este juego, podrás aprender sobre los conceptos básicos de genética y los cruzamientos.</p>
+  <iframe allow="fullscreen; autoplay;" allowfullscreen width="500" height="380" frameborder="0" src="https://es.educaplay.com/juego/19607601-desafio_del_arn.html"></iframe>  </article>
+
+  <!-- Game 4 -->
+  <article id="juego4">
+    <h2>Cuarto Juego: Adivina la Genética</h2>
+    <p>En este juego, podrás aprender sobre la relación entre la genética y las enfermedades.</p>
+ <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/19607739-descubre_el_misterio_genetico.html"></iframe>  </article>
+
+  <!-- Game 5 -->
+  <article id="juego5">
+    <h2>Quinto Juego: Une las parejas</h2>
+    <p>En este juego, podrás aprender sobre los procesos que sigue el adn</p>
+<iframe style="max-width:100%" src="https://wordwall.net/es/embed/7c7210bf03174d54bcd3e7e568878f3d?themeId=22&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+  </article>
+
+  <!-- Game 6 -->
+  <article id="juego6">
+    <h2>Sexto Juego: Quiz genetico show</h2>
+    <p>En este divertido quiz podrás probar tus conocimientos sobre la genética</p>
+     <iframe style="max-width:100%" src="https://wordwall.net/es/embed/597faa04e1b245bf98b560938649aa3d?themeId=21&templateId=69&fontStackId=12" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+  </article>
+
+  <!-- Game 7 -->
+  <article id="juego7">
+    <h2>Séptimo Juego: ¿Sí o no?</h2>
+    <p>En este juego, podrás aprender sobre la relación entre la genética y la reproducción.</p>
+     <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/19635155-genetica_verdadero_o_falso.html"></iframe>
+  </article>
+
+  <!-- Game 8 -->
+  <article id="juego8">
+    <h2>Octavo Juego: Genética A-Z</h2>
+    <p>En este juego, tendrás la palabra sobre genética que empiece por cada letra del abecedario.</p>
+<iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/19635181-genetica_a_z.html"></iframe>
+  </article>
+
+  <!-- Game 9 -->
+  <article id="juego9">
+    <h2>Noveno Juego: Genética 5 en 1</h2>
+    <p>En este juego, podrás aprender sobre los conceptos básicos de la genética, tiene 5 juegos y los puedes cambiar.</p>
+  <iframe src="https://quizlet.com/393428135/match/embed?i=5vybim&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+  </article>
+  <br>
+  <br>
+  <div id="der">
+    <h3 id="sezz"> Links por Anseiro Inc.</h3>
+     <a href="https://www.instagram.com/09sebax/" target="_blank" class="fcc-btn"> Instagram S</a>
+    <br>
+        <a href="https://share.imagica.ai/?q=89817d49-9be7-447d-9609-21a3c3256dc9" "target="_blank" class="fcc-btn"> SALV 9: Genetic Version</a>
+         <br>
+              <a href="https://sebiho.github.io" target="_blank" class="fcc-btn">GenExplora: Página Oficial</a>
+          <br>
+              <a href="https://share.imagica.ai/?q=f7b6233c-51f3-45e6-acc2-995f514a65a8" target="_blank" class="fcc-btn">SALV-T Profesor IA (Genética)</a>
+<br>
+              <a href="https://share.imagica.ai/?q=256c3a45-4640-467d-9bb6-e58be9789764" target="_blank" class="fcc-btn">SALIT IA: Imagen A Texto + Poeta </a>
+<br>
+          <a href="https://anseiro.wordpress.com" target="_blank" class="fcc-btn"> Anseiro Inc Página Web</a>
+          <p id="copi">©Copyright y derechos reservados a: <p id="koki">GenExplora™ y Sebastián Romero. (Anseiro Inc CEO)®</p></p>
+    </div>
+  <script>
+    const toggleImportanciaButton = document.getElementById("toggle-importancia");
+    const importanciaParagraph = document.getElementById("importancia");
+
+    toggleImportanciaButton.addEventListener("click", () => {
+      importanciaParagraph.classList.toggle("hidden");
+    });
+
+    const juegoButtons = document.querySelectorAll(".button");
+    const juegos = document.querySelectorAll(".juego");
+
+    juegoButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        juegos.forEach((juego) => {
+          juego.style.display = "none";
+        });
+        juegos[index].style.display = "block";
+      });
+    });
+
+    // Show all game sections at the beginning
+    juegos.forEach((juego) => {
+      juego.style.display = "block";
+    });
+  </script>
+</body>
+</html>
